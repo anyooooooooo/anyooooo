@@ -1,6 +1,5 @@
 import streamlit as st
 st.title("Max重量は？")
-st.write("あなたが上げられるMax重量を提示します！！")
 
 import streamlit as st
 
@@ -9,7 +8,8 @@ def calculate_one_rep_max(weight, reps):
         return weight
     return round(weight * (1 + 0.0333 * reps), 2)
 
-st.title("最大重量計算アプリ")
+st.write("最大重量計算アプリ")
+st.write("あなたが上げられるMax重量を提示します！！")
 st.write("種目ごとに重量と回数を入力して、最大重量を計算します。")
 
 exercises = ["ベンチプレス", "デッドリフト", "スクワット"]
