@@ -23,7 +23,7 @@ for exercise in exercises:
     st.header(exercise["name"])
     
     if os.path.exists(exercise["image"]):
-        st.image(exercise["image"], caption=f"{exercise['name']}のイラスト", use_column_width=True)
+        st.image(exercise["image"], caption=f"{exercise['name']}のイラスト", use_container_width=True)
     else:
         st.error(f"イラストが見つかりません: {exercise['image']}")
     
